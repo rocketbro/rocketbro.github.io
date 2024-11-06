@@ -1,0 +1,33 @@
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 $spacing-unit;
+}
+
+.site-header {
+    padding: $spacing-unit 0;
+    margin-bottom: $spacing-unit * 2;
+}
+
+.site-nav {
+    float: right;
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    @media screen and (max-width: 600px) {
+        position: absolute;
+        top: $spacing-unit;
+        right: $spacing-unit;
+        
+        .menu-icon {
+            display: block;
+            font-size: 2rem;
+            color: $text-color;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

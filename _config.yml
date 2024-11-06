@@ -16,6 +16,10 @@ collections:
     output: true
     permalink: /projects/:path/
 
+sass:
+  sass_dir: assets/css/_sass
+  style: compressed
+
 # Exclude files from processing
 exclude:
   - Gemfile

@@ -1,0 +1,39 @@
+.button {
+    background: $accent-color;
+    color: $text-color;
+    padding: $spacing-unit $spacing-unit * 2;
+    border-radius: $border-radius;
+    display: inline-block;
+    margin: $spacing-unit 0;
+    font-family: $mono-font-family;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+    &:hover {
+        background: darken($accent-color, 10%);
+        text-decoration: none;
+    }
+}
+
+.code-preview {
+    font-family: $mono-font-family;
+    color: $secondary-text;
+    margin: $spacing-unit * 2 0;
+    padding: $spacing-unit;
+    background: darken($background-color, 3%);
+    border-radius: $spacing-unit;
+    overflow-x: auto;
+}
+
+.project-card {
+    background: darken($background-color, 5%);
+    padding: $spacing-unit;
+    margin: $spacing-unit 0;
+    border-radius: $spacing-unit;
+    
+    h3 {
+        margin-top: 0;
+        color: $accent-color;
+    }
+}
