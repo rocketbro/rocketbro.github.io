@@ -45,6 +45,9 @@ header {
   
   // Navigation styles
   nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; // Keeps it above other content if needed
     a {
       margin-right: 1rem;
       color: $text-color;
