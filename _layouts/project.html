@@ -4,12 +4,15 @@ layout: default
 <article class="project">
   <header class="project-header">
     <h1 class="project-title">{{ page.title }}</h1>
-  </header>
+    <p class="project-description">{{ page.description }}</p>
+  
   {% if page.github %}
     <div class="project-links">
       <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   {% endif %}
+
+</header>
 
   <div class="project-content">
     {{ content }}
