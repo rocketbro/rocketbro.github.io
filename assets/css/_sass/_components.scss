@@ -1,25 +1,25 @@
-.button {
-    background: $accent-color;
-    color: $text-color;
-    padding: $spacing-unit $spacing-unit * 2;
-    border-radius: $border-radius;
-    display: inline-block;
-    margin: $spacing-unit 0;
-    font-family: $mono-font-family;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+// .button {
+//     background: $accent-color;
+//     color: $text-color;
+//     padding: $spacing-unit $spacing-unit * 2;
+//     border-radius: $border-radius;
+//     display: inline-block;
+//     margin: $spacing-unit 0;
+//     font-family: $mono-font-family;
+//     border: none;
+//     cursor: pointer;
+//     transition: background 0.3s ease;
     
-    &:hover {
-        background: darken($accent-color, 10%);
-        text-decoration: none;
-    }
-}
+//     &:hover {
+//         background: darken($accent-color, 10%);
+//         text-decoration: none;
+//     }
+// }
 
 .code-preview {
     @extend .highlight;
     font-family: $mono-font-family;
-    color: $secondary-text;
+    //color: $secondary-text;
     margin: $spacing-unit * 2 0;
     padding: $spacing-unit;
     background: darken($background-color, 3%);
@@ -31,14 +31,47 @@
     max-width: 100%;            // Ensures container doesn't overflow its parent
 }
 
-.project-card {
-    background: darken($background-color, 5%);
-    padding: $spacing-unit;
-    margin: $spacing-unit 0;
-    border-radius: $spacing-unit;
+// .project-card {
+//     background: darken($background-color, 5%);
+//     padding: $spacing-unit;
+//     margin: $spacing-unit 0;
+//     border-radius: $spacing-unit;
     
-    h3 {
-        margin-top: 0;
-        color: $accent-color;
+//     h3 {
+//         margin-top: 0;
+//         color: $accent-color;
+//     }
+// }
+
+// Post list styles
+.post-list {
+    list-style: none;
+    padding: 0;
+  
+    li {
+      margin-bottom: 1rem;
     }
-}
+  }
+  
+  // Project grid styles
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  // Project card styles
+  .project-card {
+    border: 1px solid $border-color;
+    padding: 1rem;
+    border-radius: 28px;
+    background-color: $card-background;
+  }
+  
+  // Footer styles
+  footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border-color;
+    text-align: center;
+  }

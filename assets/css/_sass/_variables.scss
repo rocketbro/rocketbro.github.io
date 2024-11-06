@@ -1,17 +1,28 @@
 // Colors
-$background-color: #111111;
-$text-color: #ffffff;
+// $background-color: #1a1a1a;
+// $text-color: #f5f5f5;
 $accent-color: #FF6B2B;
 $secondary-text: #A0A0A0;
 
-// Typography
-$base-font-family: system-ui, -apple-system, sans-serif;
-$mono-font-family: 'Courier New', monospace;
-$base-font-size: 16px;
-$large-font-size: 3.5rem;
-$medium-font-size: 2rem;
+// // Typography
+// $base-font-family: "Georgia", "Times New Roman", Times, serif;
+// $mono-font-family: 'Courier New', monospace;
+// $base-font-size: 16px;
+// $large-font-size: 3.5rem;
+// $medium-font-size: 2rem;
 
 // Spacing
 $spacing-unit: 1rem;
 $container-width: 1200px;
 $border-radius: 2rem;
+
+$font-family-base: "Georgia", "Times New Roman", Times, serif;
+$font-family-code: -apple-system, system-ui, monospace;
+$line-height-base: 1.6;
+$max-width: 800px;
+$background-color: #1a1a1a;
+$text-color: #f5f5f5;
+$border-color: #333;
+$link-color: #e0e0e0;
+$link-hover-color: #ffffff;
+$card-background: #242424;
