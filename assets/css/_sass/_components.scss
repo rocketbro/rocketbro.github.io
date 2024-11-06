@@ -18,7 +18,7 @@
 
 .code-preview {
     @extend .highlight;
-    font-family: $mono-font-family;
+    font-family: $font-family-code;
     //color: $secondary-text;
     margin: $spacing-unit * 2 0;
     padding: $spacing-unit;
