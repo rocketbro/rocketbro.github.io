@@ -1,4 +1,3 @@
-<!-- blog.md -->
 ---
 layout: default
 title: Blog

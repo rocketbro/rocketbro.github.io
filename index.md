@@ -3,6 +3,14 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Site
+# Welcome, Space Cadet
 
-This is my personal website where I share my projects and thoughts.
+The universe is ripe for exploring. 
+
+```swift
+func test() {
+    print("yolo homeboy")
+}
+test()
+```
+Look around and find cool stuff. 

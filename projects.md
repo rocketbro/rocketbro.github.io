@@ -1,4 +1,3 @@
-<!-- projects.md -->
 ---
 layout: default
 title: Projects
