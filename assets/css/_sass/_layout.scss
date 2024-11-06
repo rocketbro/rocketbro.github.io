@@ -1,37 +1,3 @@
-// .container {
-//     max-width: $container-width;
-//     margin: 0 auto;
-//     padding: 0 $spacing-unit;
-// }
-
-// .site-header {
-//     padding: $spacing-unit 0;
-//     margin-bottom: $spacing-unit * 2;
-// }
-
-// .site-nav {
-//     float: right;
-    
-//     .menu-icon {
-//         display: none;
-//     }
-    
-//     @media screen and (max-width: 600px) {
-//         position: absolute;
-//         top: $spacing-unit;
-//         right: $spacing-unit;
-        
-//         .menu-icon {
-//             display: block;
-//             font-size: 2rem;
-//             color: $text-color;
-//             background: none;
-//             border: none;
-//             cursor: pointer;
-//         }
-//     }
-// }
-
 // Header styles
 header {
     margin-bottom: 2rem;
@@ -44,20 +10,41 @@ header {
   }
   
   // Navigation styles
+  // nav {
+  //   position: sticky;
+  //   top: 0;
+  //   z-index: 1000; // Keeps it above other content if needed
+  //   a {
+  //     margin-right: 1rem;
+  //     color: $text-color;
+  //     font-weight: bold;
+  
+  //     &:hover {
+  //       color: $link-hover-color;
+  //     }
+  //   }
+  // }
+
+header.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $background-color;
+  width: 100%;
+
   nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000; // Keeps it above other content if needed
     a {
       margin-right: 1rem;
       color: $text-color;
       font-weight: bold;
-  
+
       &:hover {
         color: $link-hover-color;
       }
     }
   }
+}
+
 
 
 // Footer styles

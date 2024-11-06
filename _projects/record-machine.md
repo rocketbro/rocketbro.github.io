@@ -6,10 +6,6 @@ description: "For musicians - organize your next release."
 github: https://github.com/rocketbro/Record-Machine
 ---
 
-# Record Machine
-
-Organize your next release.
-
 ```swift
 func sayHi() {
     print("Hello my bro")
