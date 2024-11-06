@@ -14,13 +14,4 @@ struct ChatView: View {
 }
 ```
 
-<pre class="code-preview">
-  <code class="language-swift">
-    struct ChatView: View {
-        @ObservedObject var viewModel = ChatViewModel()
-        // Your code preview here
-    }
-  </code>
-</pre>
-
 Look around and find cool stuff. 

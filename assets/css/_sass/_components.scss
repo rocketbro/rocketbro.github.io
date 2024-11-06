@@ -16,20 +16,20 @@
 //     }
 // }
 
-.code-preview {
-    @extend .highlight;
-    font-family: $font-family-code;
-    //color: $secondary-text;
-    margin: $spacing-unit * 2 0;
-    padding: $spacing-unit;
-    background: darken($background-color, 3%);
-    border-radius: $spacing-unit;
-    overflow-x: auto;
-    white-space: pre;           // Preserves whitespace and line breaks
-    word-wrap: normal;          // Prevents text wrapping
-    -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
-    max-width: 100%;            // Ensures container doesn't overflow its parent
-}
+// .code-preview {
+//     @extend .highlight;
+//     font-family: $font-family-code;
+//     //color: $secondary-text;
+//     margin: $spacing-unit * 2 0;
+//     padding: $spacing-unit;
+//     background: darken($background-color, 3%);
+//     border-radius: $spacing-unit;
+//     overflow-x: auto;
+//     white-space: pre;           // Preserves whitespace and line breaks
+//     word-wrap: normal;          // Prevents text wrapping
+//     -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
+//     max-width: 100%;            // Ensures container doesn't overflow its parent
+// }
 
 // .project-card {
 //     background: darken($background-color, 5%);
@@ -52,7 +52,7 @@
       margin-bottom: 1.5rem;
     }
   
-    h2 {
+    h3 {
       margin-bottom: 0.3em;
     }
   
@@ -76,8 +76,8 @@
 // Project card styles
 .project-card {
     border: 1px solid $border-color;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 1rem;
+    border-radius: 28px;
     background-color: $card-background;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   
@@ -88,7 +88,7 @@
   
     h3 {
       margin-top: 0;
-      margin-bottom: 0.5em;
+      margin-bottom: 0;
     }
   
     p {
