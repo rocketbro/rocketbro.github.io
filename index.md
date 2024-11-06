@@ -14,11 +14,13 @@ struct ChatView: View {
 }
 ```
 
-<div class="code-preview">
-struct ChatView: View {
-    @ObservedObject var viewModel = ChatViewModel()
-    // Your code preview here
-}
-</div>
+<pre class="code-preview">
+  <code class="language-swift">
+    struct ChatView: View {
+        @ObservedObject var viewModel = ChatViewModel()
+        // Your code preview here
+    }
+  </code>
+</pre>
 
 Look around and find cool stuff. 
