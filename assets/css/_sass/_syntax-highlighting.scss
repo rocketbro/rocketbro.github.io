@@ -93,15 +93,21 @@
 .highlight {
   overflow-x: auto;
   border-radius: 12px;
+  padding: 1em;
+  
   
   pre {
     white-space: pre;
     word-wrap: normal;
     background: none;
+    border-radius: 12px;
+    margin: 0;
   }
   
   code {
     white-space: pre;
     background: none;
+    border-radius: 12px;
+    margin: 0;
   }
 }
