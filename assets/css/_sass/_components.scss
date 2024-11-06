@@ -17,7 +17,7 @@
 }
 
 .code-preview {
-    //@extend .highlight;
+    @extend .highlight;
     font-family: $mono-font-family;
     color: $secondary-text;
     margin: $spacing-unit * 2 0;
