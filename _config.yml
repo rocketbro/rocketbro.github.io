@@ -1,0 +1,24 @@
+# _config.yml
+title: ROCKETBRO
+description: Documenting the start of thousands of projects
+baseurl: "" # Change this if your site is not at root
+url: "https://rocketbro.github.io"
+github_username: rocketbro
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
