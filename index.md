@@ -16,4 +16,11 @@ struct ChatView: View {
 
 <a href="/projects" class="button">View Latest Project</a>
 
+```swift
+struct ChatView: View {
+    @ObservedObject var viewModel = ChatViewModel()
+    // Your code preview here
+}
+```
+
 Look around and find cool stuff. 

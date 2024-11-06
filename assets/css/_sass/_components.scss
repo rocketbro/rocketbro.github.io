@@ -17,6 +17,7 @@
 }
 
 .code-preview {
+    @extend .highlight;
     font-family: $mono-font-family;
     color: $secondary-text;
     margin: $spacing-unit * 2 0;
@@ -24,6 +25,10 @@
     background: darken($background-color, 3%);
     border-radius: $spacing-unit;
     overflow-x: auto;
+    white-space: pre;           // Preserves whitespace and line breaks
+    word-wrap: normal;          // Prevents text wrapping
+    -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
+    max-width: 100%;            // Ensures container doesn't overflow its parent
 }
 
 .project-card {
