@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Web"
-tag: "Web"
+tag: "web"
 permalink: /tags/web/
 ---
