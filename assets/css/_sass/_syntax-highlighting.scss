@@ -2,7 +2,7 @@
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #d8d8d8;
-  background-color: #181818;
+  background-color: #111111;
 }
 .highlight .err {
   color: #181818;
@@ -88,4 +88,19 @@
 }
 .highlight .ss {
   color: #a1b56c;
+}
+
+.highlight {
+  overflow-x: auto;
+  
+  pre {
+    white-space: pre;
+    word-wrap: normal;
+    background: none;
+  }
+  
+  code {
+    white-space: pre;
+    background: none;
+  }
 }
