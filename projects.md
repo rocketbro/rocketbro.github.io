@@ -3,15 +3,13 @@ layout: default
 title: Projects
 ---
 
-# Projects
+<h1>Projects</h1>
 
 <div class="project-grid">
   {% for project in site.projects %}
     <div class="project-card">
-      <h2>
-        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      </h2>
-      <p>{{ project.description }}</p>
+      <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+      <p>{{ project.excerpt }}</p>
     </div>
   {% endfor %}
 </div>

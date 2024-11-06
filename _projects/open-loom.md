@@ -1,9 +1,15 @@
 ---
-layout: default
-title: OpenLoom
-description: Standard spec for LLM interfaces
+layout: project
+title: "Record Machine"
+github: https://github.com/rocketbro/Record-Machine
 ---
 
-# OpenLoom
+# Record Machine
 
-A standardized specification for LLM interfaces.
+Organize your next release.
+
+```swift
+func sayHi() {
+    print("Hello my bro")
+}
+```

@@ -31,15 +31,35 @@
 
 // Base styles
 body {
-    font-family: $font-family-base;
-    line-height: $line-height-base;
-    max-width: $max-width;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: $background-color;
-    color: $text-color;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
   }
-  
-  pre, code {
-    font-family: $font-family-code;
-  }
+}
+
+pre, code {
+  font-family: $font-family-code;
+  background-color: darken($background-color, 5%);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}

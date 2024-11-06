@@ -49,29 +49,49 @@
     padding: 0;
   
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    h2 {
+      margin-bottom: 0.3em;
+    }
+  
+    .post-meta {
+      font-size: 0.9em;
+      color: $text-color-muted;
+    }
+  
+    .post-excerpt {
+      margin-top: 0.5em;
     }
   }
   
-  // Project grid styles
-  .project-grid {
+// Project grid styles
+.project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
   }
-  
-  // Project card styles
-  .project-card {
+
+// Project card styles
+.project-card {
     border: 1px solid $border-color;
-    padding: 1rem;
-    border-radius: 28px;
+    padding: 1.5rem;
+    border-radius: 8px;
     background-color: $card-background;
-  }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-  // Footer styles
-  footer {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid $border-color;
-    text-align: center;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+  
+    p {
+      margin-bottom: 0;
+    }
   }
