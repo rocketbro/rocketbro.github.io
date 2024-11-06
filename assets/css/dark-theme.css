@@ -1,0 +1,87 @@
+/* Dark theme base styles */
+:root {
+  --background-dark: #121212;
+  --text-primary: #ffffff;
+  --text-accent: #FF6B35;
+  --button-color: #C19A50;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--text-accent);
+  font-family: 'Courier New', monospace;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+}
+
+/* Container and layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Button styles */
+.button {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 25px;
+  color: var(--background-dark);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Code snippet styling */
+pre, code {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  padding: 0.2em 0.4em;
+}
+
+/* Navigation */
+.nav-container {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
