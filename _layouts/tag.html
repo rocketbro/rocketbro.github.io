@@ -1,14 +1,12 @@
 ---
 layout: default
-title: "Posts by Tag"
-permalink: /tags/:tag/
 ---
 
 <h2>Posts tagged with "{{ page.tag }}"</h2>
 <ul>
-  {% for post in site.posts %}
+  {% raw %}{% for post in site.posts %}
     {% if post.tags contains page.tag %}
       <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
     {% endif %}
-  {% endfor %}
+  {% endfor %}{% endraw %}
 </ul>

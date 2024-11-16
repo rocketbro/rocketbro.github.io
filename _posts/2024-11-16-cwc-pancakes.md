@@ -2,7 +2,7 @@
 layout: post
 title: "Buttermilk Pancakes"
 date: 2024-11-16
-tags: [Cooking With Claude]
+tags: [cooking-with-claude]
 ---
 
 # Buttermilk Pancakes Recipe (Original Measurements)
