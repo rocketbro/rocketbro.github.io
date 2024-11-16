@@ -12,10 +12,10 @@ layout: default
   </div>
   • • • • •
   {% if page.tags %}
-  <p>Tags: 
-    {% for tag in page.tags %}
-      <a href="{{ '/tags/' | append: tag | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
+  <p>Tags: {% for tag in page.tags %}
+  {% assign display_name = site.tag_names[tag] | default: tag %}
+  <a href="/tags/{{ tag }}">{{ display_name }}</a>
+{% endfor %}
   </p>
 {% endif %}
 </article>
