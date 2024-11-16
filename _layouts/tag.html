@@ -1,12 +1,15 @@
 ---
 layout: default
+title: Posts tagged with "{{ page.tag }}"
 ---
 
 <h2>Posts tagged with "{{ page.tag }}"</h2>
 <ul>
-  {% raw %}{% for post in site.posts %}
+  {% for post in site.posts %}
     {% if post.tags contains page.tag %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
     {% endif %}
-  {% endfor %}{% endraw %}
+  {% endfor %}
 </ul>
