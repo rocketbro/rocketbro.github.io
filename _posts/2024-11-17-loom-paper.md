@@ -9,7 +9,8 @@ tags: []
 
 {% include image.html 
    file="multiverse01.png" 
-   alt="the multiverse" 
+   alt="the multiverse"
+   width="100%"
    height="150"
 %}
 

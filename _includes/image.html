@@ -8,6 +8,7 @@
       src="{{ include.url }}" 
       alt="{{ include.alt | default: 'Image' }}" 
       class="responsive-image"
+      {% if include.width %}style="width: {{ include.width }}px;"{% endif %}
       {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
     >
   </div>
@@ -21,6 +22,7 @@
       src="{{ site.baseurl }}/assets/images/{{ include.file }}" 
       alt="{{ include.alt | default: 'Image' }}" 
       class="responsive-image"
+      {% if include.width %}style="width: {{ include.width }}px;"{% endif %}
       {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
     >
   </div>
