@@ -134,6 +134,7 @@
   align-items: center;
   width: 100%;
   z-index: 2;
+  margin: 12px;
 }
 
 .image-with-title-image {
@@ -144,7 +145,6 @@
   border-radius: 12px;
   object-fit: contain;
   margin-right: 20px;
-  margin-left: 12px;
 }
 
 .image-with-title-title {
@@ -152,5 +152,4 @@
   font-weight: bold;
   color: white;
   flex-grow: 1;
-  margin-right: 12px;
 }
