@@ -3,27 +3,37 @@ layout: default
 title: Home
 ---
 
-# Welcome, Space Cadet
+{% include image-with-title.html 
+   file="ProfilePic.jpg" 
+   alt="Asher Pope profile pic" 
+   height="200"
+   title="The Mind of Asher Pope"
+%}
 
-The universe is ripe for exploring. 
+Welcome! This site is an active notebook to get things out of my brain and into some readable format that I can iterate on and use to track progress. A bit about me and my work...
 
-```swift
-struct ChatView: View {
-    @ObservedObject var viewModel = ChatViewModel()
-    // Your code preview here
-}
-```
+### [Intrinsic Labs LLC](https://intrinsiclabs.co)
+I own and operate a small tech studio called Intrinsic Labs LLC. We primarily focus on [software development](https://intrisiclabs.co/software) in the native mobile space, typically with some form of the following stack:
+#### iOS Native
+- Swift
+- SwiftUI
+- SwiftData
+
+#### Android Native
+- Kotlin
+- Jetpack Compose
+- Room
+
+#### UI & UX Design
+- Figma
+- Adobe Illustrator & Photoshop
+- Affinity Designer
+
+We are currently working on our first web based application, for which we're using **React** and **Node.js**.  
+
+Intrinsic Labs' other primary field is [video production](https://intrinsiclabs.co/video). I have 12+ years experience in the video world, ranging from interview-style studio shoots to 3D animation to live rock show recaps. You can watch my 2024 reel below:
+
 <br>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-    <iframe 
-        src="https://www.youtube.com/embed/5OJGHAop7Dw?si=UYRc5V5HgroHmhLB" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    </iframe>
-</div>
+{% include youtube.html video_id="5OJGHAop7Dw" %}
 <br>
 Look around and find cool stuff. 

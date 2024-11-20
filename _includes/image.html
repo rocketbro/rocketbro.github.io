@@ -1,0 +1,27 @@
+{% if include.url %}
+  <div class="responsive-image-container">
+    <div 
+      class="responsive-image-background" 
+      style="background-image: url('{{ include.url }}')">
+    </div>
+    <img 
+      src="{{ include.url }}" 
+      alt="{{ include.alt | default: 'Image' }}" 
+      class="responsive-image"
+      {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
+    >
+  </div>
+{% else %}
+  <div class="responsive-image-container">
+    <div 
+      class="responsive-image-background" 
+      style="background-image: url('{{ site.baseurl }}/assets/images/{{ include.file }}')">
+    </div>
+    <img 
+      src="{{ site.baseurl }}/assets/images/{{ include.file }}" 
+      alt="{{ include.alt | default: 'Image' }}" 
+      class="responsive-image"
+      {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
+    >
+  </div>
+{% endif %}
