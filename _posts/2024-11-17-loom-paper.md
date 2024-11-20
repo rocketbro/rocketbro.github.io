@@ -5,6 +5,14 @@ date: 2024-11-16
 tags: []
 ---
 
+*Note: I did not write this. This is an article version of a seminal paper to the theory behind [Loom: LLM Interface](https://rocketbro.github.io/projects/loom), and I thought it made sense to post an easy-to-read version here on the blog. [Read the original paper here.](https://arxiv.org/abs/2102.06391)*
+
+{% include image.html 
+   file="multiverse01.png" 
+   alt="the multiverse" 
+   height="150"
+%}
+
 # Multiversal views on language models
 
 Laria Reynolds  
@@ -12,8 +20,6 @@ moire@knc.ai
 
 Kyle McDonell  
 kyle@knc.ai
-
-[Original paper](https://arxiv.org/abs/2102.06391)
 
 ## Abstract
 
