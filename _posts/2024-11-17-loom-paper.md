@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Loom: LLMs Are Multiverse Generators"
+author: "Asher Pope"
 date: 2024-11-16
 tags: []
 ---
@@ -8,10 +9,10 @@ tags: []
 *Note: I did not write this. This is an article version of a seminal paper to the theory behind [Loom: LLM Interface](https://rocketbro.github.io/projects/loom), and I thought it made sense to post an easy-to-read version here on the blog. [Read the original paper here.](https://arxiv.org/abs/2102.06391)*
 
 {% include image.html 
-   file="multiverse01.png" 
+   file="multiverse02.png" 
    alt="the multiverse"
-   width="100%"
-   height="150"
+   height="200"
+   fill_width=true
 %}
 
 # Multiversal views on language models

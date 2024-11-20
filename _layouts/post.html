@@ -4,18 +4,17 @@ layout: default
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+    <p class="post-meta">Posted by {{ page.author }} on {{ page.date | date: "%B %d, %Y" }}</p>
+    {% if page.tags and page.tags.size > 0 %}
+    <p>Tags: {% for tag in page.tags %}
+      {% assign display_name = site.tag_names[tag] | default: tag %}
+      <a href="/tags/{{ tag }}">{{ display_name }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
-  • • • • •
-  {% if page.tags %}
-  <p>Tags: {% for tag in page.tags %}
-  {% assign display_name = site.tag_names[tag] | default: tag %}
-  <a href="/tags/{{ tag }}">{{ display_name }}</a>
-{% endfor %}
-  </p>
-{% endif %}
 </article>

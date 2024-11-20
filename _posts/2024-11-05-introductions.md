@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Setting Up A Jekyll Site"
+author: "Asher Pope"
 date: 2024-11-06
 tags: [Web]
 ---

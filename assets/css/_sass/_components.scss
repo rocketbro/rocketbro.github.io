@@ -74,9 +74,11 @@
 .responsive-image-container {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  border-radius: 12px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
 }
 
 .responsive-image-background {
@@ -87,6 +89,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 12px;
   filter: blur(15px) brightness(0.7);
   opacity: 0.35;
   z-index: 1;
@@ -98,11 +101,16 @@
   max-width: 100%;
   height: auto;
   max-height: 100%;
-  border-radius: 0px;
+  border-radius: 12px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
   z-index: 2;
+  
+  &--fill-width {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .image-with-title-container {
