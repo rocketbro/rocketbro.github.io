@@ -113,6 +113,11 @@
   max-width: 100%;
   border-radius: 12px;
   overflow: hidden;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .image-with-title-background {
@@ -131,10 +136,16 @@
 .image-with-title-content {
   position: relative;
   display: flex;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: fit-content;
   z-index: 2;
   margin: 12px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 12px 0;
+  }
 }
 
 .image-with-title-image {
@@ -145,6 +156,12 @@
   border-radius: 12px;
   object-fit: contain;
   margin-right: 20px;
+
+  @media (max-width: 500px) {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .image-with-title-title {
@@ -152,4 +169,11 @@
   font-weight: bold;
   color: white;
   flex-grow: 1;
+  text-align: left;
+  line-height: 1.2;
+
+  @media (max-width: 500px) {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }

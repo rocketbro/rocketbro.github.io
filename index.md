@@ -6,7 +6,7 @@ title: Home
 {% include image-with-title.html 
    file="ProfilePic.jpg" 
    alt="Asher Pope profile pic" 
-   height="200"
+   height="150"
    title="The Mind of Asher Pope"
 %}
 
