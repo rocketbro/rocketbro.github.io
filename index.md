@@ -29,7 +29,7 @@ I own and operate a small tech studio called Intrinsic Labs LLC. We primarily fo
 - Adobe Illustrator & Photoshop
 - Affinity Designer
 
-We are currently working on our first web based application, for which we're using **React** and **Node.js**.  
+Active software projects include [Record Machine](https://rocketbro.github.io/projects/record-machine/) and [Loom](https://rocketbro.github.io/projects/loom/). We are currently working on our first web based application, for which we're using **React** and **Node.js** (more details coming soon).  
 
 Intrinsic Labs' other primary field is [video production](https://intrinsiclabs.co/video). I have 12+ years experience in the video world, ranging from interview-style studio shoots to 3D animation to live rock show recaps. You can watch my 2024 reel below:
 
