@@ -1,9 +1,11 @@
 ---
 layout: project
 title: "Record Machine"
+project_title: "Record Machine"
 type: "iOS App"
 description: "For musicians - organize your next release."
 github: https://github.com/rocketbro/Record-Machine
+order: 1
 ---
 
 ```swift

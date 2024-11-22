@@ -1,0 +1,177 @@
+/* Project styles - to be added to your existing SCSS */
+
+.project {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $spacing-unit;
+}
+
+// Navigation and Layout
+.project-container {
+  display: flex;
+  gap: $spacing-unit * 2;
+  margin: $spacing-unit * 2 0;
+}
+
+.project-main {
+  flex: 1;
+  min-width: 0; // Prevents flexbox overflow
+}
+
+// Sidebar
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.project-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: $spacing-unit * 0.5 0;
+  }
+
+  a {
+    display: block;
+    padding: $spacing-unit * 0.5;
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-radius: 3px;
+    
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+      background-color: darken($background-color, 5%);
+    }
+  }
+
+  li.active a {
+    color: $accent-color;
+    background-color: darken($background-color, 5%);
+  }
+}
+
+// Header
+.project-header {
+  margin-bottom: $spacing-unit * 2;
+
+  .project-title {
+    font-family: $font-family-headings;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .project-description {
+    color: $secondary-text;
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.project-links {
+  a {
+    display: inline-block;
+    padding: $spacing-unit * 0.5 $spacing-unit;
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: darken($background-color, 5%);
+    border-radius: 3px;
+
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Breadcrumbs
+.breadcrumbs {
+  margin-bottom: $spacing-unit * 2;
+  padding: $spacing-unit * 0.5 0;
+  border-bottom: 1px solid $border-color;
+  color: $text-color-muted;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    color: $text-color;
+  }
+}
+
+// Pagination
+.pagination {
+  margin-top: $spacing-unit * 3;
+  padding-top: $spacing-unit;
+  border-top: 1px solid $border-color;
+}
+
+.prev-next-links {
+  display: flex;
+  justify-content: space-between;
+  gap: $spacing-unit;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Project content area
+.project-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-headings;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  pre, code {
+    font-family: $font-family-code;
+    background-color: darken($background-color, 5%);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-bottom: $spacing-unit * 2;
+  }
+
+  .project-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-unit * 0.5;
+  }
+
+  .project-nav li {
+    margin: 0;
+  }
+}
