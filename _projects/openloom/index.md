@@ -10,4 +10,4 @@ order: 1
 
 Welcome. 
 
-[Installation](https://rocketbro.github.io/projects/openloom/installation.md)
+[Installation](/projects/openloom/installation/)

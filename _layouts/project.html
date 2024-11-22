@@ -1,72 +1,57 @@
 ---
 layout: default
 ---
-<article class="project">
-  <!-- Breadcrumbs -->
-  <div class="breadcrumbs">
-    <a href="/">Home</a> &gt;
-    <a href="/projects/">Projects</a> &gt;
-    {% assign project_base = page.url | split: '/' | slice: 0, 3 | join: '/' %}
-    {% if page.url == project_base %}
-      <span>{{ page.title }}</span>
-    {% else %}
-      <a href="{{ project_base }}">{{ page.project_title }}</a> &gt;
-      <span>{{ page.title }}</span>
-    {% endif %}
-  </div>
 
-  <div class="project-container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <nav class="project-nav">
-        {% assign project_pages = site.pages | where_exp: "item", "item.url contains project_base" | sort: "order" %}
-        <ul>
-          {% for p in project_pages %}
-            <li {% if p.url == page.url %}class="active"{% endif %}>
-              <a href="{{ p.url }}">{{ p.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </aside>
+{% assign project_base = page.url | split: '/' | slice: 0, 3 | join: '/' %}
+{% assign current_project = site.pages | where: "url", project_base | first %}
 
-    <div class="project-main">
-      <!-- Existing Header -->
-      <header class="project-header">
-        <h1 class="project-title">{{ page.title }}</h1>
-        <p class="project-description">{{ page.type }} • {{ page.description }}</p>
+<div class="breadcrumbs">
+  <a href="/">Home</a> &gt; 
+  <a href="/projects">Projects</a> &gt;
+  {% if page.url == project_base %}
+    {{ page.title }}
+  {% else %}
+    <a href="{{ project_base }}">{{ page.project_title }}</a> &gt; {{ page.title }}
+  {% endif %}
+</div>
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.type }} • {{ page.description }}</p>
+
+{% if page.github %}
+<p><a href="{{ page.github }}" class="github-link">View on GitHub</a></p>
+{% endif %}
+
+{% assign project_pages = site.pages | where_exp: "item", "item.url contains project_base" | sort: "order" %}
+
+<nav class="project-nav">
+  <ul>
+  {% for p in project_pages %}
+    <li {% if p.url == page.url %}class="active"{% endif %}>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</nav>
+
+{{ content }}
+
+<div class="pagination">
+  {% for p in project_pages %}
+    {% if p.url == page.url %}
+      {% assign index = forloop.index0 %}
+      {% assign prev_index = index | minus: 1 %}
+      {% assign next_index = index | plus: 1 %}
       
-        {% if page.github %}
-          <div class="project-links">
-            <a href="{{ page.github }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-        {% endif %}
-      </header>
-
-      <!-- Content -->
-      <div class="project-content">
-        {{ content }}
-      </div>
-
-      <!-- Previous/Next Navigation -->
-      <div class="pagination">
-        {% for p in project_pages %}
-          {% if p.url == page.url %}
-            {% assign index = forloop.index0 %}
-            {% assign prev_index = index | minus: 1 %}
-            {% assign next_index = index | plus: 1 %}
-            <div class="prev-next-links">
-              {% if prev_index >= 0 %}
-                <a href="{{ project_pages[prev_index].url }}" class="prev">← {{ project_pages[prev_index].title }}</a>
-              {% endif %}
-              {% if next_index < project_pages.size %}
-                <a href="{{ project_pages[next_index].url }}" class="next">{{ project_pages[next_index].title }} →</a>
-              {% endif %}
-            </div>
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</article>
+      {% if prev_index >= 0 %}
+        <a href="{{ project_pages[prev_index].url | relative_url }}" class="prev">← {{ project_pages[prev_index].title }}</a>
+      {% endif %}
+      
+      {% if next_index < project_pages.size %}
+        <a href="{{ project_pages[next_index].url | relative_url }}" class="next">{{ project_pages[next_index].title }} →</a>
+      {% endif %}
+      
+      {% break %}
+    {% endif %}
+  {% endfor %}
+</div>
