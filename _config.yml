@@ -4,6 +4,7 @@ description: Documenting the start of thousands of projects
 baseurl: "" # Change this if your site is not at root
 url: "https://rocketbro.github.io"
 github_username: rocketbro
+permalink: pretty
 
 # Build settings
 markdown: kramdown
@@ -12,6 +13,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 collections:
   projects:
