@@ -5,38 +5,41 @@ layout: default
 {% assign project_base = page.url | split: '/' | slice: 0, 3 | join: '/' %}
 {% assign current_project = site.pages | where: "url", project_base | first %}
 
+<header>
+<h1>{{ page.title }}</h1>
+<p>{{ page.type }} • {{ page.description }}
+
+{% if page.github %}
+ • <a href="{{ page.github }}" class="github-link">View on GitHub</a>
+{% endif %}
+
+</p>
+
 <div class="breadcrumbs">
-  <a href="/">Home</a> &gt; 
+  <a href="/">Home</a> &gt;
   <a href="/projects">Projects</a> &gt;
   {% if page.url == project_base %}
-    {{ page.title }}
+  {{ page.title }}
   {% else %}
-    <a href="{{ project_base }}">{{ page.project_title }}</a> &gt; {{ page.title }}
+  <a href="{{ project_base }}">{{ page.project_title }}</a> &gt; {{ page.title }}
   {% endif %}
 </div>
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.type }} • {{ page.description }}</p>
-
-{% if page.github %}
-<p><a href="{{ page.github }}" class="github-link">View on GitHub</a></p>
-{% endif %}
-
 {% assign project_pages = site.pages | where_exp: "item", "item.url contains project_base" | sort: "order" %}
-
+</header>
 <nav class="project-nav">
   <ul>
-  {% for p in project_pages %}
-    <li {% if p.url == page.url %}class="active"{% endif %}>
+    {% for p in project_pages %}
+    <li {% if p.url==page.url %}class="active" {% endif %}>
       <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
 </nav>
 
 {{ content }}
 
-<div class="pagination">
+<!-- <div class="pagination">
   {% for p in project_pages %}
     {% if p.url == page.url %}
       {% assign index = forloop.index0 %}
@@ -54,4 +57,4 @@ layout: default
       {% break %}
     {% endif %}
   {% endfor %}
-</div>
+</div> -->

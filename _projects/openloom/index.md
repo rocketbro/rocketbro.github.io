@@ -11,4 +11,5 @@ permalink: /projects/openloom
 
 Welcome. 
 
-[Installation](/projects/openloom/installation/)
+[Installation](/projects/openloom/installation/)  
+[Conversations](/projects/openloom/conversation/)
