@@ -16,13 +16,7 @@ layout: default
 <div class="breadcrumbs">
   <code>
   <em>
-  <a href="/">Home</a>&nbsp;/&nbsp;
-  <a href="/projects">Projects</a>/
-  {% if page.url == project_base %}
-  {{ page.nav_title }}
-  {% else %}
-  <a href="{{ project_base }}">{{ page.project_title }}</a>/{{ page.nav_title }}
-  {% endif %}
+  <a href="/">Home</a>/<a href="/projects">Projects</a>/{% if page.url == project_base %}{{ page.nav_title }}{% else %}<a href="{{ project_base }}">{{ page.project_title }}</a>/{{ page.nav_title }}{% endif %}
   </em>
   </code>
 </div>
