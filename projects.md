@@ -9,7 +9,7 @@ title: Projects
   {% for project in site.projects %}
     {% if project.order == 1 %}
       <div class="project-card">
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <h3><a href="{{ project.url }}">{{ project.project_title }}</a></h3>
         <p>{{ project.type }} • {{ project.description }}</p>
       </div>
     {% endif %}

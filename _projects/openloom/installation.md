@@ -1,9 +1,8 @@
 ---
 layout: project
-title: "Installation"
+nav_title: "Installation"
 project_title: "OpenLoom"
-type: "OpenLoom"
-description: "Prerequisites & Installations"
+description: "Standard for Loom Interfaces"
 order: 2
 ---
 

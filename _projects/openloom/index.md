@@ -1,15 +1,16 @@
 ---
 layout: project
-title: "OpenLoom"
+nav_title: "OpenLoom"
 project_title: "OpenLoom"
 type: "Specification"
 description: "Standard for Loom Interfaces"
-github: https://github.com/intrinsic-labs/loom-swift
 order: 1
 permalink: /projects/openloom
 ---
 
-Welcome. 
+### About OpenLoom
+[View on GitHub](https://github.com/intrinsic-labs/loom-swift)
 
+### Overview
 [Installation](/projects/openloom/installation/)  
 [Conversations](/projects/openloom/conversation/)

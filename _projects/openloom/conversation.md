@@ -1,8 +1,7 @@
 ---
 layout: project
-title: "Conversations"
+nav_title: "Conversations"
 project_title: "OpenLoom"
-type: "OpenLoom"
 description: "Defining a Conversation"
 order: 3
 ---

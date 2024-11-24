@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Loom: LLM Interface"
+nav_title: "Loom: LLM Interface"
 project_title: "Loom: LLM Interface"
 type: "iOS App"
 description: "Go Beyond AI Chat"

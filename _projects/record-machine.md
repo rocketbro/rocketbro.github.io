@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Record Machine"
+nav_title: "Record Machine"
 project_title: "Record Machine"
 type: "iOS App"
 description: "For musicians - organize your next release."
