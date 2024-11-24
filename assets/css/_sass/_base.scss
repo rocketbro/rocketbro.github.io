@@ -1,7 +1,7 @@
 // Base styles
 body {
   font-family: $font-family-base;
-  font-size: 107.25%;
+  font-size: 109.25%;
   line-height: $line-height-base;
   max-width: $max-width;
   margin: 0 auto;
@@ -29,6 +29,7 @@ a {
 
 pre, code {
   font-family: $font-family-code;
+  font-size: 90%;
   background-color: darken($background-color, 5%);
   padding: 0.2em 0.4em;
   border-radius: 3px;
