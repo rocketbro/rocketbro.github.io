@@ -12,5 +12,5 @@ permalink: /projects/openloom
 [View on GitHub](https://github.com/intrinsic-labs/loom-swift)
 
 ### Overview
-[Installation](/projects/openloom/installation/)  
-[Conversations](/projects/openloom/conversation/)
+#### [Installation](/projects/openloom/installation/)  
+#### [Conversations](/projects/openloom/conversation/)

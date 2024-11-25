@@ -3,7 +3,7 @@ layout: post
 title: "Loom: LLMs Are Multiverse Generators"
 author: "Asher Pope"
 date: 2024-11-16
-tags: []
+tags: [dev]
 ---
 
 *Note: I did not write this. This is an article version of a seminal paper to the theory behind [Loom: LLM Interface](https://rocketbro.github.io/projects/loom), and I thought it made sense to post an easy-to-read version here on the blog. [Read the original paper here.](https://arxiv.org/abs/2102.06391)*

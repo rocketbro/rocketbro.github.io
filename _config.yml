@@ -34,3 +34,8 @@ exclude:
 tag_names:
   cooking-with-claude: "Cooking With Claude"
   web: "Web"
+  ios: "iOS"
+  android: "Android"
+  dev: "Dev"
+  film: "Film"
+  cli: "CLI"
