@@ -9,7 +9,7 @@ permalink: /projects/openloom
 ---
 
 ### About OpenLoom
-[View on GitHub](https://github.com/intrinsic-labs/loom-swift)
+OpenLoom aims to create a unified standard that interfaces based on the [Loom Theory](https://rocketbro.github.io/2024/11/16/loom-paper/) can implement to easily share node trees (conversations).
 
 ### Overview
 #### [Installation](/projects/openloom/installation/)  
