@@ -3,16 +3,15 @@ layout: default
 ---
 <article class="post">
   <header class="post-header">
+  <div class="post-tags">
+  {% if page.tags and page.tags.size > 0 %}
+  {% for tag in page.tags %}
+    {% include tag-chip.html tag=tag %}
+  {% endfor %}
+  {% endif %}
+</div>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">Posted by {{ page.author }} on {{ page.date | date: "%B %d, %Y" }}</p>
-    {% if page.tags and page.tags.size > 0 %}
-    <p>Tags:
-      {% for tag in page.tags %}
-      {% assign display_name = site.tag_names[tag] | default: tag %}
-      <a href="/tags/{{ tag }}">{{ display_name }}</a>{% if forloop.last == false %}, {% endif %}
-      {% endfor %}
-    </p>
-    {% endif %}
 
   </header>
 

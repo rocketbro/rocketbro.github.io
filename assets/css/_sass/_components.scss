@@ -190,3 +190,23 @@
     font-size: 1.5rem;
   }
 }
+
+.tag-chip {
+  display: inline-block;
+  background-color: #F4F4F4;
+  color: #333;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  &:hover {
+    background-color: #E0E0E0;
+  }
+
+  .tag-name {
+    font-weight: 500;
+  }
+}
