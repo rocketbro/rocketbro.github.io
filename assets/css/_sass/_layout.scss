@@ -30,7 +30,8 @@ header.nav {
   top: 0;
   z-index: 1000;
   background-color: $background-color;
-  width: 100%;
+  font-family: $font-family-code;
+  width: 100vw;
 
   nav {
     a {
