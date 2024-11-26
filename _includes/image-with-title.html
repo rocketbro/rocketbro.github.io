@@ -1,33 +1,26 @@
 {% if include.url %}
+<div class="full-width-wrapper">
   <div class="image-with-title-container">
-    <div 
-      class="image-with-title-background" 
-      style="background-image: url('{{ include.url }}')">
+    <div class="image-with-title-background" style="background-image: url('{{ include.url }}')">
     </div>
     <div class="image-with-title-content">
-      <img 
-        src="{{ include.url }}" 
-        alt="{{ include.alt | default: 'Image' }}" 
-        class="image-with-title-image"
-        {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
-      >
+      <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" class="image-with-title-image" {% if
+        include.height %}style="height: {{ include.height }}px;" {% endif %}>
       <h1 class="image-with-title-title"><strong>{{ include.title }}</strong></h1>
     </div>
   </div>
+</div>
 {% else %}
+<div class="full-width-wrapper">
   <div class="image-with-title-container">
-    <div 
-      class="image-with-title-background" 
+    <div class="image-with-title-background"
       style="background-image: url('{{ site.baseurl }}/assets/images/{{ include.file }}')">
     </div>
     <div class="image-with-title-content">
-      <img 
-        src="{{ site.baseurl }}/assets/images/{{ include.file }}" 
-        alt="{{ include.alt | default: 'Image' }}" 
-        class="image-with-title-image"
-        {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
-      >
+      <img src="{{ site.baseurl }}/assets/images/{{ include.file }}" alt="{{ include.alt | default: 'Image' }}"
+        class="image-with-title-image" {% if include.height %}style="height: {{ include.height }}px;" {% endif %}>
       <h1 class="image-with-title-title">{{ include.title }}</h1>
     </div>
   </div>
+</div>
 {% endif %}
