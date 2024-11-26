@@ -6,13 +6,6 @@ layout: default
 {% assign current_project = site.pages | where: "url", project_base | first %}
 
 <header>
-<h1>{{ page.project_title }}</h1>
-<h3>{{ page.description }}</h3>
-
-{% if page.github %}
-<p><a href="{{ page.github }}" class="github-link">View on GitHub</a></p>
-{% endif %}
-
 <div class="breadcrumbs">
   <code>
   <em>
@@ -20,6 +13,13 @@ layout: default
   </em>
   </code>
 </div>
+
+<h1>{{ page.project_title }}</h1>
+<h3>{{ page.description }}</h3>
+
+{% if page.github %}
+<p><a href="{{ page.github }}" class="github-link">View on GitHub</a></p>
+{% endif %}
 
 {% assign project_pages = site.pages | where_exp: "item", "item.url contains project_base" | sort: "order" %}
 </header>
