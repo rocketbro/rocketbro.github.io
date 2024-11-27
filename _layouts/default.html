@@ -65,81 +65,50 @@
             document.body.classList.toggle('menu-open');
         });
 
-        document.addEventListener('DOMContentLoaded', function() {
-    // Theme toggle functionality
-    const themeToggle = document.querySelector('.theme-toggle');
-    const moonIcon = themeToggle.querySelector('.moon');
-    const sunIcon = themeToggle.querySelector('.sun');
+        // Theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const moonIcon = themeToggle.querySelector('.moon');
+        const sunIcon = themeToggle.querySelector('.sun');
 
-    // Check for saved theme preference
-    const getPreferredTheme = () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
+        // Check for saved theme preference
+        const getPreferredTheme = () => {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme) {
             return savedTheme;
-        }
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
+          }
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
 
-    // Function to set theme
-    const setTheme = (theme) => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        
-        // Update icon visibility
-        if (theme === 'dark') {
+        // Function to set theme
+        const setTheme = (theme) => {
+          document.documentElement.setAttribute('data-theme', theme);
+          localStorage.setItem('theme', theme);
+          
+          // Update icon visibility
+          if (theme === 'dark') {
             moonIcon.style.display = 'none';
             sunIcon.style.display = 'block';
-        } else {
+          } else {
             moonIcon.style.display = 'block';
             sunIcon.style.display = 'none';
-        }
-    };
+          }
+        };
 
-    // Initialize theme
-    setTheme(getPreferredTheme());
+        // Initialize theme
+        setTheme(getPreferredTheme());
 
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-    });
-
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
-
-    // Touch event handlers for theme toggle
-    themeToggle.addEventListener('touchstart', function(e) {
-        this.classList.add('hover');
-    }, { passive: false });
-
-    themeToggle.addEventListener('touchend', function(e) {
-        this.classList.remove('hover');
-        e.preventDefault(); // Prevent any ghost clicks
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-    }, { passive: false });
-
-    themeToggle.addEventListener('touchcancel', function(e) {
-        this.classList.remove('hover');
-    }, { passive: false });
-
-    // Prevent default touch behavior and remove hover immediately when touch moves
-    themeToggle.addEventListener('touchmove', function(e) {
-        this.classList.remove('hover');
-        e.preventDefault();
-    }, { passive: false });
-
-    // Remove hover class when touching anywhere else on the document
-    document.addEventListener('touchstart', function(e) {
-        if (e.target !== themeToggle) {
-            themeToggle.classList.remove('hover');
-            }
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
         });
-    });
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+          if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+          }
+        });
     </script>
 </body>
 </html>
