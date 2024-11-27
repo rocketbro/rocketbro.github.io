@@ -40,21 +40,21 @@
   a {
     display: block;
     padding: $spacing-unit * 0.5;
-    color: $link-color;
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s ease;
     border-radius: 3px;
     
     &:hover {
-      color: $link-hover-color;
+      color: var(--link-hover-color);
       text-decoration: underline;
-      background-color: darken($background-color, 5%);
+      background-color: var(--card-background);
     }
   }
 
   li.active a {
-    color: $accent-color;
-    background-color: darken($background-color, 5%);
+    color: var(--accent-color);
+    background-color: var(--card-background);
   }
 }
 
@@ -69,7 +69,7 @@
   }
 
   .project-description {
-    color: $secondary-text;
+    color: var(--text-color-muted);
     margin-bottom: $spacing-unit;
   }
 }
@@ -94,10 +94,9 @@
 // Breadcrumbs
 .breadcrumbs {
   font-size: 80%;
-  margin-bottom: $spacing-unit * 2;
-  padding: $spacing-unit * 0.5 0;
-  border-bottom: 1px solid $border-color;
-  color: $text-color-muted;
+  padding: ($spacing-unit * 0.5) $spacing-unit;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color-muted);
 
   a {
     color: $link-color;
@@ -119,7 +118,7 @@
 .pagination {
   margin-top: $spacing-unit * 3;
   padding-top: $spacing-unit;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border-color);
 }
 
 .prev-next-links {

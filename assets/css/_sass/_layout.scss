@@ -15,19 +15,23 @@ header.nav {
   width: 100%;
   z-index: 1000;
   padding: 1rem 1rem;
-  background-color: rgba(26, 26, 26, 0.5);
+  background-color: var(--nav-background);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
   box-sizing: border-box;
   border-bottom: none;
+  transition: background-color 0.3s ease;
 }
 
 // Menu Toggle Button
 .menu-toggle {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   width: 30px;
   height: 20px;
   background: none;
@@ -35,13 +39,14 @@ header.nav {
   cursor: pointer;
   padding: 0;
   z-index: 2000;
+  margin: 0;
 
   span {
     display: block;
     position: absolute;
     height: 3px;
     width: 100%;
-    background: $text-color;
+    background: var(--text-color);
     border-radius: 3px;
     transition: all 0.3s ease;
 
@@ -70,7 +75,7 @@ header.nav {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $background-color;
+  background-color: var(--background-color);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -88,13 +93,32 @@ header.nav {
   .menu-title {
     font-family: $font-family-code;
     font-size: 1rem;
-    color: $text-color-muted;
-    margin-bottom: 1rem;
+    color: var(--text-color-muted);
+    margin-bottom: 0.25rem;
     width: 100%;
     max-width: $max-width;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .menu-footer {
+    font-family: $font-family-code;
+    font-size: 1rem;
+    color: var(--text-color-muted);
+    margin-top: 1.25rem;
+    width: 100%;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    a {
+      display: block;
+    }
+  }
+
 
   nav {
     text-align: left;
@@ -105,14 +129,14 @@ header.nav {
     
     a {
       display: block;
-      font-size: 2rem;
-      margin: 1rem 0;
-      color: $text-color;
+      font-size: 3rem;
+      margin: 0.5rem 0;
+      color: var(--text-color);
       text-decoration: none;
       transition: color 0.3s ease;
 
       &:hover {
-        color: $link-hover-color;
+        color: var(--link-hover-color);
       }
     }
   }
@@ -138,8 +162,8 @@ main {
 footer {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid var(--border-color);
     text-align: center;
     font-size: 0.9em;
-    color: $text-color-muted;
+    color: var(--text-color-muted);
   }

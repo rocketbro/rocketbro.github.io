@@ -2,8 +2,9 @@
 # Import all SCSS files
 ---
 @import "variables";
-@import "posts";
+@import "theme";
 @import "base";
 @import "layout";
 @import "components";
+@import "posts";
 @import "syntax-highlighting";

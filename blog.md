@@ -3,7 +3,8 @@ layout: default
 title: Blog
 ---
 
-<h1>~/blog</h1>
+<div style="font-size: 2rem;"><h1>~/blog</h1></div>
+
 My posts are sporatic but this is probably the best blog on the entire internet. I mainly write about current projects, but also post thoughts about music, movies, and whatever else is going on in my brain. I also post recipes *with no ads at all* and even better, *no Jump To Recipe button* because the only thing in the post *is* the recipe. Look for CWC (Cooking With Claude) posts - the way online cooking should be.
 
 <ul class="post-list">

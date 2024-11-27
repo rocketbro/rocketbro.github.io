@@ -1,21 +1,115 @@
+// Theme colors
+$themes: (
+  light: (
+    background-color: #ffffff,
+    text-color: #333333,
+    text-color-muted: #666666,
+    border-color: #dddddd,
+    link-color: #C45D35,
+    link-hover-color: #D77348,
+    card-background: #f5f5f5,
+    accent-color: #7FA86B,
+    accent-color-rgb: '127, 168, 107',
+    secondary-text: #698555,
+    nav-background: rgba(255, 255, 255, 0.8),
+    tag-chip-background: #e5e5e5,
+  ),
+  dark: (
+    background-color: #1a1a1a,
+    text-color: #f5f5f5,
+    text-color-muted: #b0b0b0,
+    border-color: #333333,
+    link-color: #E88B64,
+    link-hover-color: #F4A07C,
+    card-background: #242424,
+    accent-color: #7FA86B,
+    accent-color-rgb: '127, 168, 107',
+    secondary-text: #98C184,
+    nav-background: rgba(26, 26, 26, 0.8),
+    tag-chip-background: #363636,
+  )
+);
 
-$accent-color: #FF6B2B;
-$secondary-text: #A0A0A0;
-
-// Spacing
+// Base variables that don't change with theme
 $spacing-unit: 1rem;
 $container-width: 1200px;
 $border-radius: 2rem;
-
 $font-family-base: "Cardo", Georgia, "Times New Roman", Times, serif;
 $font-family-headings: "Lato", "Helvetica Neue", Arial, sans-serif;
 $font-family-code: 'JetBrains Mono', 'Courier New', monospace;
 $line-height-base: 1.6;
 $max-width: 650px;
-$background-color: #1a1a1a;
-$text-color: #f5f5f5;
-$text-color-muted: #b0b0b0;
-$border-color: #333;
-$link-color: #ef946f;
-$link-hover-color: #fdb599;
-$card-background: #242424;
+
+// Default theme colors (for SCSS compilation)
+$background-color: var(--background-color, #1a1a1a);
+$text-color: var(--text-color, #f5f5f5);
+$text-color-muted: var(--text-color-muted, #b0b0b0);
+$border-color: var(--border-color, #333333);
+$link-color: var(--link-color, #ef946f);
+$link-hover-color: var(--link-hover-color, #fdb599);
+$card-background: var(--card-background, #242424);
+$accent-color: var(--accent-color, #FF6B2B);
+$secondary-text: var(--secondary-text, #A0A0A0);
+
+
+// Generate CSS variables for both themes
+:root {
+  @each $key, $value in map-get($themes, 'light') {
+    --#{$key}: #{$value};
+  }
+}
+
+[data-theme="dark"] {
+  @each $key, $value in map-get($themes, 'dark') {
+    --#{$key}: #{$value};
+  }
+}
+
+// Theme toggle button styles
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: rgba(var(--accent-color-rgb), 0.9);
+  }
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: rotate(15deg);
+  }
+}
+
+// Apply theme colors to elements
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+.project-card {
+  background-color: var(--card-background);
+  border-color: var(--border-color);
+}

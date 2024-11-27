@@ -1,0 +1,74 @@
+// Generate CSS variables for both themes
+:root {
+  @each $key, $value in map-get($themes, "light") {
+    --#{$key}: #{$value};
+  }
+}
+
+[data-theme="dark"] {
+  @each $key, $value in map-get($themes, "dark") {
+    --#{$key}: #{$value};
+  }
+}
+
+// Theme toggle button styles
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 2000;
+  margin: 0;
+  order: 0;
+  
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: rotate(15deg);
+  }
+}
+
+// Apply theme colors to elements
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+.project-card {
+  background-color: var(--card-background);
+  border-color: var(--border-color);
+}
+
+header.nav {
+  background-color: rgba(26, 26, 26, 0.5);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.menu-toggle span {
+  background: var(--text-color);
+} 

@@ -6,8 +6,8 @@ body {
   max-width: $max-width;
   margin: 0 auto;
   padding: 1rem;
-  background-color: $background-color;
-  color: $text-color;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,12 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: $link-color;
+  color: theme-value(link-color);
   text-decoration: none;
   transition: color 0.3s ease;
 
   &:hover {
-    color: $link-hover-color;
+    color: theme-value(link-hover-color);
     text-decoration: underline;
   }
 }

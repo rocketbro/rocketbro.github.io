@@ -3,7 +3,9 @@ layout: default
 title: Projects
 ---
 
-<h1>Projects</h1>
+<div style="font-size: 2rem;"><h1>Projects</h1></div>
+
+Here you'll find a list of projects I've worked on/am currently working on. I keep these pages updated pretty regularly. If you're interested in any of these or in collaborating, please reach out.
 
 <div class="project-grid">
   {% for project in site.projects %}
