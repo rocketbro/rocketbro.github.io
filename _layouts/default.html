@@ -119,6 +119,8 @@
     themeToggle.addEventListener('touchend', function(e) {
         this.classList.remove('hover');
         e.preventDefault(); // Prevent any ghost clicks
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
     }, { passive: false });
 
     themeToggle.addEventListener('touchcancel', function(e) {
@@ -135,9 +137,9 @@
     document.addEventListener('touchstart', function(e) {
         if (e.target !== themeToggle) {
             themeToggle.classList.remove('hover');
-        }
+            }
+        });
     });
-});
     </script>
 </body>
 </html>
