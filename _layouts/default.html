@@ -111,19 +111,25 @@
         }
     });
 
-    // New touch event handlers
+    // Touch event handlers for theme toggle
     themeToggle.addEventListener('touchstart', function(e) {
         this.classList.add('hover');
-    });
+    }, { passive: false });
 
     themeToggle.addEventListener('touchend', function(e) {
         this.classList.remove('hover');
-    });
+        e.preventDefault(); // Prevent any ghost clicks
+    }, { passive: false });
 
-    // Prevent default touch behavior
+    themeToggle.addEventListener('touchcancel', function(e) {
+        this.classList.remove('hover');
+    }, { passive: false });
+
+    // Prevent default touch behavior and remove hover immediately when touch moves
     themeToggle.addEventListener('touchmove', function(e) {
+        this.classList.remove('hover');
         e.preventDefault();
-    });
+    }, { passive: false });
 
     // Remove hover class when touching anywhere else on the document
     document.addEventListener('touchstart', function(e) {
