@@ -171,8 +171,8 @@ footer {
 
 // page title styles
 .root-page-title {
-    @extend h1;
-    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 3rem;
     font-family: $font-family-headings;
     margin-top: 0.35em;
     margin-bottom: 0.35em;
