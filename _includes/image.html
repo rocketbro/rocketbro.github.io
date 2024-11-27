@@ -1,9 +1,5 @@
 {% if include.url %}
-  <div class="responsive-image-container">
-    <div 
-      class="responsive-image-background" 
-      style="background-image: url('{{ include.url }}')">
-    </div>
+  <div class="responsive-image-container" {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }};"{% endif %}>
     <img 
       src="{{ include.url }}" 
       alt="{{ include.alt | default: 'Image' }}" 
@@ -12,11 +8,7 @@
     >
   </div>
 {% else %}
-  <div class="responsive-image-container">
-    <div 
-      class="responsive-image-background" 
-      style="background-image: url('{{ site.baseurl }}/assets/images/{{ include.file }}')">
-    </div>
+  <div class="responsive-image-container" {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }};"{% endif %}>
     <img 
       src="{{ site.baseurl }}/assets/images/{{ include.file }}" 
       alt="{{ include.alt | default: 'Image' }}" 

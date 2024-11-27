@@ -6,8 +6,9 @@ title: Home
 {% include image-with-title.html 
    file="ProfilePic.jpg" 
    alt="Asher Pope profile pic" 
-   height="150"
+   height="175"
    title="The Mind of Asher Pope"
+   background_style="solid"
 %}
 
 Welcome! This site is an active notebook to get things out of my brain and into some readable format that I can iterate on and use to track progress. A bit about me and my work...

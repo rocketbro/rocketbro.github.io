@@ -74,53 +74,40 @@
 .responsive-image-container {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
+  max-width: 850px;
+  margin: 0 auto;
+  
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: calc(100% / (var(--aspect-ratio))); // Creates space based on aspect ratio
+  }
 }
 
-.responsive-image-background {
+.responsive-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
-  filter: blur(15px) brightness(0.7);
-  opacity: 0.35;
-  z-index: 1;
-}
-
-.responsive-image {
-  position: relative;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  border-radius: 12px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  z-index: 2;
-  
-  &--fill-width {
-    width: 100%;
-    object-fit: cover;
-  }
+  border-radius: 28px;
+  object-fit: cover; // Ensures image fills container while maintaining aspect ratio
 }
 
 .image-with-title-container {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: calc(100% - 2rem);
+  max-width: $max-width;
+  margin: 0 auto;
   overflow: hidden;
+  border-radius: 28px;
+  
+  @media (max-width: 500px) {
+    width: calc(100% - 2rem);
+  }
 }
 
 .image-with-title-background {
@@ -131,26 +118,36 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(15px) brightness(0.7);
-  opacity: 0.7;
   z-index: 1;
+  border-radius: 28px;
+
+  &.blur {
+    filter: blur(30px) brightness(0.7);
+    opacity: 0.7;
+  }
+
+  &.solid {
+    background-color: #d2cbc5;
+    opacity: 1.0;
+    background-image: none !important;
+  }
 }
 
 .image-with-title-content {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  max-width: 1200px; // Or whatever max-width you prefer
+  max-width: 800px;
   margin: 0 auto;
-  padding: 12px;
+  padding: 20px;
   box-sizing: border-box;
   z-index: 2;
+  min-height: 150px;
 
   @media (max-width: 500px) {
     flex-direction: column;
     align-items: center;
-    padding: 12px 0;
   }
 }
 
@@ -159,28 +156,40 @@
   max-width: 50%;
   height: auto;
   max-height: 100%;
-  border-radius: 12px;
+  border-radius: 1000px;
   object-fit: contain;
   margin-right: 20px;
 
   @media (max-width: 500px) {
     max-width: 100%;
     margin-right: 0;
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
 }
 
 .image-with-title-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
   flex-grow: 1;
   text-align: left;
   line-height: 1.2;
+  font-family: $font-family-headings;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .solid ~ .image-with-title-content & {
+    color: #000;
+  }
 
   @media (max-width: 500px) {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -194,9 +203,10 @@
   text-decoration: none;
   margin-right: 8px;
   margin-bottom: 8px;
+  font-family: $font-family-code;
 
   &:hover {
-    background-color: #E0E0E0;
+    background-color: #333;
   }
 
   .tag-name {
@@ -211,4 +221,13 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
+
+.post-list,
+.project-grid {
+  margin-top: 0;
+  
+  h1 {
+    margin-top: 0;
+  }
 }

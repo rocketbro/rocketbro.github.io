@@ -12,11 +12,19 @@
 </head>
 <body>
     <header class="nav">
-        <nav>
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/blog' | relative_url }}">Blog</a>
-            <a href="{{ '/projects/' | relative_url }}">Projects</a>
-        </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="fullscreen-menu">
+            <div class="menu-title">Table of Contents</div>
+            <nav>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/blog' | relative_url }}">Blog</a>
+                <a href="{{ '/projects/' | relative_url }}">Projects</a>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -26,5 +34,13 @@
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.fullscreen-menu').classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
 </body>
 </html>
