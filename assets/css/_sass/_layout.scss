@@ -85,6 +85,22 @@ header.nav {
   padding: 4rem 2rem 2rem;
   z-index: 1500;
 
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  // Apply opposite theme
+  &[data-theme="dark"] {
+    @each $key, $value in map-get($themes, "dark") {
+      --#{$key}: #{$value};
+    }
+  }
+
+  &[data-theme="light"] {
+    @each $key, $value in map-get($themes, "light") {
+      --#{$key}: #{$value};
+    }
+  }
+
   &.active {
     opacity: 1;
     visibility: visible;
