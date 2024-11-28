@@ -88,7 +88,6 @@ header.nav {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 
-  // Apply opposite theme
   &[data-theme="dark"] {
     @each $key, $value in map-get($themes, "dark") {
       --#{$key}: #{$value};
