@@ -30,16 +30,35 @@
 
 // Project card styles
 .project-card {
-    border: 1px solid $border-color;
-    padding: 1rem;
-    border-radius: 12px;
+    position: relative;
+    border: 0.5px solid $border-color;
+    padding: 1.25rem;
+    border-radius: 28px;
     background-color: $card-background;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    > a {
+      text-decoration: none;
+      color: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      z-index: 1;
+    }
+
+    h3, p {
+      position: relative;
+      z-index: 2;
+    }
   
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(var(--accent-color), 0.15);
       border-color: var(--accent-color);
+      cursor: pointer;
     }
   
     h3 {
@@ -128,7 +147,7 @@
   }
 
   &.solid {
-    background-color: #d9d9d9;
+    background-color: var(--image-with-title-background);
     opacity: 1.0;
     background-image: none !important;
   }

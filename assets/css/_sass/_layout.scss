@@ -145,7 +145,7 @@ header.nav {
     a {
       display: block;
       font-size: 3rem;
-      margin: 0.5rem 0;
+      margin: 0.25rem 0;
       color: var(--text-color);
       text-decoration: none;
       transition: color 0.3s ease;
@@ -183,12 +183,3 @@ footer {
     color: var(--text-color-muted);
   }
   
-
-// page title styles
-.root-page-title {
-    font-weight: bolder;
-    font-size: 3rem;
-    font-family: $font-family-headings;
-    margin-top: 0.35em;
-    margin-bottom: 0.35em;
-}
