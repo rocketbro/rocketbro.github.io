@@ -93,8 +93,9 @@
 .highlight {
   overflow-x: auto;
   border-radius: 12px;
-  padding: 0.25em;
-  
+  padding: 0.5rem;
+  background-color: var(--card-background);
+  //margin: 1rem 0;
   
   pre {
     white-space: pre;
@@ -110,9 +111,4 @@
     border-radius: 12px;
     margin: 0;
   }
-}
-
-.highlight {
-  background-color: var(--background-color);
-  color: var(--text-color);
 }

@@ -1,0 +1,40 @@
+// Import both theme files
+@import "syntax-light";
+@import "syntax-dark";
+
+// Wrap light theme styles
+[data-theme="light"] {
+  .highlight {
+    @extend .highlight-github;
+    //border: 1px solid #acacac;
+  }
+}
+
+// Wrap dark theme styles
+[data-theme="dark"] {
+  .highlight {
+    @extend .highlight-gruvbox;
+  }
+}
+
+// Common styles for both themes
+.highlight {
+  overflow-x: auto;
+  border-radius: 12px;
+  padding: 0.5rem;
+  
+  pre {
+    white-space: pre;
+    word-wrap: normal;
+    background: none;
+    border-radius: 12px;
+    margin: 0;
+  }
+  
+  code {
+    white-space: pre;
+    background: none;
+    border-radius: 12px;
+    margin: 0;
+  }
+} 
