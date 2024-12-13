@@ -9,10 +9,34 @@ order: 1
 permalink: /projects/record-machine
 ---
 
-```swift
-func sayHi() {
-    print("Hello my bro")
-}
-```
+## Tired of juggling scattered voice memos, song lyric notes, artwork ideas, and all the other random stuff you need to release an album?
 
-This is a test project page to work on styling and info.
+[Record Machine](https://apps.apple.com/us/app/record-machine/id6478185491) is your one stop shop for organizing everything for your next release. Enjoy the simplicity of keeping it all together in one place and get a sense of how your album will actually feel to listeners once it's released.
+
+- Audio Files: Store and organize all your musical ideas.
+- Music Player: Listen to your demos as an album with a player that looks and feels like popular streaming platforms.
+- Notes & Lyrics: Keep your ideas, mix notes, and song lyrics in the same place as your demos.
+- Album Details: Manage everything from liner notes to credits.
+
+Spend less time digging and more time creating. Here's what you can track with the app:
+
+### Album Data
+- Title
+- Artist
+- Genre
+- Release Date
+- Liner Notes
+- Album Artwork
+
+### Track Data
+- Title
+- Writers
+- BPM
+- Key
+- Genre
+- Album
+- Lyrics
+- Track Notes
+- Attach Audio File
+
+Record Machine is a brand new app and features will be added regularly! Please reach out with suggestions.
