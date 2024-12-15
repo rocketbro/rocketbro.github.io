@@ -15,7 +15,7 @@ On this page, we'll define the structure of a single *node*. Nodes are the root 
 
 type Node = {
     id: string; // The id of the node
-    text: string; // The text of the node
+    text: string; // The main text content of the node
     author: Author; // The author of the node - see Author enum
     modelId: string; // Some identifier for the model used to generate the node
     createdTime: Date; // The time the node was created
@@ -23,6 +23,9 @@ type Node = {
     parentId: string | null; // The id of the parent node. Must only be null for the root node.
     childrenIds: string[]; // IDs of all children that claim this node as their parent
     rememberedChildId: string | null; // The id of the most recently visited child. Used to retrace branches.
+
+    isBookmarked: boolean; // Boolean to track if this node is bookmarked
+    bookmarkTitle: string | null; // A display title for this node. Optional.
 }
 
 enum Author { // A node must claim one of these cases as an author
