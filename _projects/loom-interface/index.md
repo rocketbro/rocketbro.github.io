@@ -5,7 +5,7 @@ project_title: "Loom: LLM Interface"
 type: "iOS App"
 description: "Go Beyond AI Chat"
 order: 1
-permalink: /projects/loom
+permalink: /projects/loom-interface
 ---
 
 > Right now, you're having a conversation through a keyhole. Loom opens the whole door - you can see all the different ways a conversation could go, learn from them, and choose the most useful path.
@@ -46,4 +46,6 @@ Loom connects to the Anthropic and Openrouter APIs, giving you access to nearly 
 - Model access to native iOS Shortcuts
 - Additional interaction modes
 
-[Join the Discord for beta access](https://discord.gg/JtJeug6mFY), and follow progress on my social media accounts. Check out [CLooi: Command Loom Interface](https://github.com/socketteer/clooi), my first inspiration for the project. 
+Visit the [Help Page](/projects/loom-interface/help) for tips on using the app, API explanations, example Loom Trees to download, and more.  
+
+[Join the Discord for beta access](https://discord.gg/JtJeug6mFY), and follow progress on my social media accounts. Check out [CLooi: Command Loom Interface](https://github.com/socketteer/clooi), my first inspiration for the project.
