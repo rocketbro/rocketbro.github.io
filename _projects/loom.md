@@ -19,6 +19,8 @@ Loom: LLM Interface is the first Loom designed for mobile platforms, and is curr
 ### What Is A Loom Interface?
 A Loom Interface, introduced in a 2021 paper by Reynolds and McDonell, is an approach to interacting with language models that allows users to explore multiple continuations of any conversation point, creating a tree-like structure of parallel exchanges. Read more about the theory on the [OpenLoom Project Page](/projects/openloom).
 
+### The Loom Experience
+
 In practice, **Loom: LLM Interface** feels like a messaging app, but packs in loads of extra functionality to unlock the actual potential of your human/AI interactions. What you dream and imagine is possible is almost entirely shaped by the interface with which you interact. 
 
 <br>
@@ -32,6 +34,8 @@ In practice, **Loom: LLM Interface** feels like a messaging app, but packs in lo
 Popular AI interfaces right now almost all enforce linear thinking - one "best" or "correct" way for the conversation to go, with no ability to go back, to generate two or three or twenty continuations of the same prompt, and pick up from any of them at any time. Loom lets your interactions flow the way your imagination does. You bounce around, play out many mental scenarios before making a decision, have the same conversation internally a hundred times but slightly adjust it with each iteration. 
 
 What if document editors didn't let you go back and reimagine previous paragraphs? What if GPS only showed you a single route to your destination? What if simulators could only run one simulation, with no ability to change settings or adjust the environment? It's time to go beyond AI chat. Unlock the power of **Loom: LLM Interface.**
+
+### App Features
 
 Loom connects to the Anthropic and Openrouter APIs, giving you access to nearly 300 models. It also supports import and export of loom trees in the [OpenLoom format](/projects/openloom), allowing users to easily share their conversations and build on each other's findings. Many exciting features are planned for the near future, including: 
 
