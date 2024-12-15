@@ -17,7 +17,7 @@ type Node = {
     id: string; // The id of the node
     text: string; // The main text content of the node
     author: Author; // The author of the node - see Author enum
-    modelId: string; // Some identifier for the model used to generate the node
+    modelId: string; // Some identifier for the model used to generate the node. If the node was created by the user, it should be 'User' or a username.
     createdTime: Date; // The time the node was created
 
     parentId: string | null; // The id of the parent node. Must only be null for the root node.
