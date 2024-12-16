@@ -24,3 +24,13 @@ So in short:
 
 
 You can visit the [Anthropic](https://console.anthropic.com/settings/keys) and [OpenRouter](https://openrouter.ai/settings/keys) websites to create keys (you will need to make an account on these services). Once you have your keys, you can paste them into the Loom app from the settings screen. You will need to purchase credits for your account on each website (you can also choose to use one service *or* the other; OpenRouter provides access to Anthropic's models along with hundreds of others). Your credits will decrease based on your usage. 
+
+### Example Loom Trees
+
+Download the below files and import them from the home screen to get a feel for navigating around a tree. 
+
+{% include download-button.html 
+  file="/dlc/loom-interface/24-12-15 The Existence of Claude.json" 
+  name="The Existence of Claude.json" 
+  type="JSON File" 
+%}
