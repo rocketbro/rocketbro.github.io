@@ -5,7 +5,7 @@ title: Portfolio
 
 <div style="font-size: 2rem;"><h1 style="margin-top: 0.25em">Portfolio</h1></div>
 
-This shall be fleshed out in the near and bright future. Until then, check out what I'm working on [here](/projects) and enjoy the reel below. Hit me up on [X](https://x.com/asherpope/) or jump into the [Intrinsic Labs Discord Server](https://discord.gg/HjSjeJYNKh) if you'd like to chat.
+This page is currently in development. Until it's complete, check out what I'm working on [here](/projects) and enjoy the content below. Hit me up on [X](https://x.com/asherpope/) or jump into the [Intrinsic Labs Discord Server](https://discord.gg/HjSjeJYNKh) if you'd like to chat.
 
 ## Software Development
 
@@ -13,7 +13,7 @@ This shall be fleshed out in the near and bright future. Until then, check out w
 
 ### Record Machine: Organize Your Next Release
 
-[Record Machine](https://apps.apple.com/us/app/record-machine/id6478185491) is an iOS app designed to help musicians organize and protoype their next musical project. You can read about it on the [project page](/projects/record-machine).  
+[Record Machine](https://apps.apple.com/us/app/record-machine/id6478185491) is an iOS app designed to help musicians organize and protoype their next musical project. You can read about it on the [project page](/projects/record-machine) and view the code on [GitHub](https://github.com/rocketbro/Record-Machine).  
 
 *Tech Stack, Funtionality, & Frameworks*
 - Swift & SwiftUI
@@ -33,6 +33,17 @@ This shall be fleshed out in the near and bright future. Until then, check out w
 - Apple Keychain & Biometric Auth for API key storage
 - AVSpeechSynthesizer for beta voice mode
 - Import & export JSON files for conversation sharing
+
+<hr>
+
+### 42" Interactive Android Kiosk
+
+The Missions & Outreach department of [Christ Covenant Church](https://christcovenant.org) wanted a way for members to easily stay up to date on their supported workers around the globe. I created a solution using [Elo hardware](https://www.elotouch.com/) and a from-scratch Android to drive it. [View the code on GitHub](https://github.com/rocketbro/CCC-SouthLobbyDisplay).  
+
+*Tech Stack, Funtionality, & Frameworks*
+- Kotlin & Jetpack Compose
+- Airtable for easy-to-handoff remote backend
+- Custom Kotlin client to interface with Airtable API
 
 <br>
 
