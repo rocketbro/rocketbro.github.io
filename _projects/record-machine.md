@@ -12,7 +12,7 @@ permalink: /projects/record-machine
 {% include image.html 
    file="spinners-studio.gif" 
    alt="Asher and the Spinners recording in the studio"
-   aspect_ratio="2.2/1"
+   aspect_ratio="2/1"
 %}
 
 ## Tired of juggling scattered voice memos, song lyric notes, artwork ideas, and all the other random stuff you need to release an album?

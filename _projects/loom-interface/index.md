@@ -11,7 +11,7 @@ permalink: /projects/loom-interface
 {% include image.html 
    file="meaning-of-life.gif" 
    alt="The meaning of life by Claude"
-   aspect_ratio="2.2/1"
+   aspect_ratio="2/1"
 %}
 
 > Right now, you're having a conversation through a keyhole. Loom opens the whole door - you can see all the different ways a conversation could go, learn from them, and choose the most useful path.

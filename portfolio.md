@@ -19,7 +19,7 @@ All projects written from the ground up by Asher Pope, including this website ([
 {% include image.html 
    file="meaning-of-life.gif" 
    alt="The meaning of life by Claude"
-   aspect_ratio="2.2/1"
+   aspect_ratio="2/1"
 %}
 
 # Loom: LLM Interface
@@ -45,7 +45,7 @@ Right now, popular AI interfaces almost all enforce linear thinking - one "best"
 {% include image.html 
    file="spinners-studio.gif" 
    alt="Asher and the Spinners recording in the studio"
-   aspect_ratio="2.2/1"
+   aspect_ratio="2/1"
 %}
 
 # Record Machine
