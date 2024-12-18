@@ -11,6 +11,7 @@ This page highlights the work I'm most proud of. Check out what I'm currently wo
 ## Software Development
 <hr>
 ### Innovative Software, Holistic Solutions: Turning Challenges Into Achievements.
+### Innovative Software, Holistic Solutions: Turning Challenges Into Achievements.
 All projects written from the ground up by Asher Pope, including this website ([view source on GitHub](https://github.com/rocketbro/rocketbro.github.io)).
 
 
@@ -23,7 +24,7 @@ All projects written from the ground up by Asher Pope, including this website ([
 {% include image.html 
    file="meaning-of-life.gif" 
    alt="The meaning of life by Claude"
-   aspect_ratio="2.2/1"
+   aspect_ratio="2/1"
 %}
 
 Right now, popular AI interfaces almost all enforce linear thinking - one "best" or "correct" way for the conversation to go, with no ability to generate two or three or twenty continuations to the same prompt, compare, then continue from any or *all* of them at will. Loom lets your interactions flow the way your imagination does. Read about it on the [project page](/projects/loom-interface).  
@@ -48,7 +49,7 @@ Record Machine is an iOS app designed for musicians. Tired of juggling all the r
 {% include image.html 
    file="spinners-studio.gif" 
    alt="Asher and the Spinners recording in the studio"
-   aspect_ratio="2.2/1"
+   aspect_ratio="2/1"
 %}
 
 You can read more about it on the [project page](/projects/record-machine), [buy it on the App Store](https://apps.apple.com/us/app/record-machine/id6478185491), and [view the code on GitHub](https://github.com/rocketbro/Record-Machine).  
