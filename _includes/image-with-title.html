@@ -4,7 +4,8 @@
     <div class="image-with-title-background {% if include.background_style == 'solid' %}solid{% else %}blur{% endif %}" style="background-image: url('{{ include.url }}')">
     </div>
     <div class="image-with-title-content">
-      <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" class="image-with-title-image" {% if
+      <img src="{{ include.url }}" alt="{{ include.alt | default: 'Image' }}" 
+        class="image-with-title-image {% if include.shape == 'square' %}square{% else %}round{% endif %}" {% if
         include.height %}style="height: {{ include.height }}px;" {% endif %}>
       <div class="image-with-title-title">{{ include.title }}</div>
     </div>
@@ -18,7 +19,8 @@
     </div>
     <div class="image-with-title-content">
       <img src="{{ site.baseurl }}/assets/images/{{ include.file }}" alt="{{ include.alt | default: 'Image' }}"
-        class="image-with-title-image" {% if include.height %}style="height: {{ include.height }}px;" {% endif %}>
+        class="image-with-title-image {% if include.shape == 'square' %}square{% else %}round{% endif %}" {% if 
+        include.height %}style="height: {{ include.height }}px;" {% endif %}>
       <div class="image-with-title-title">{{ include.title }}</div>
     </div>
   </div>

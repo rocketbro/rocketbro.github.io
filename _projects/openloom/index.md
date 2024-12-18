@@ -24,3 +24,9 @@ While the original paper focuses mainly on applications in the creative writing 
 
 ### OpenLoom
 The OpenLoom project aims to create a unified standard that LLM interfaces based on the [Loom Theory](https://rocketbro.github.io/2024/11/16/loom-paper/) can implement to easily share node trees (conversations) between platforms. It defines shapes for loom trees (conversations) and nodes (messages), as well as example methods for traversing and interacting with the tree. 
+
+OpenLoom files are stored in JSON format and should use the following naming convention:  
+
+`example-file.openloom.json`  
+
+This makes it easy to quickly identify files compatible with OpenLoom. Read the [Node](/projects/openloom/nodes) and [Loom Tree](/projects/openloom/loom-trees) pages for implementation details.

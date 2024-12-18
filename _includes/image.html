@@ -1,19 +1,29 @@
 {% if include.url %}
-  <div class="responsive-image-container" {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }};"{% endif %}>
-    <img 
-      src="{{ include.url }}" 
-      alt="{{ include.alt | default: 'Image' }}" 
-      class="responsive-image{% if include.fill_width %} responsive-image--fill-width{% endif %}"
-      {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
-    >
+  <div>
+    <div class="responsive-image-container" {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }};"{% endif %}>
+      <img 
+        src="{{ include.url }}" 
+        alt="{{ include.alt | default: 'Image' }}" 
+        class="responsive-image{% if include.fill_width %} responsive-image--fill-width{% endif %}"
+        {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
+      >
+    </div>
+    {% if include.credit %}
+      <div class="image-credit">{{ include.credit }}</div>
+    {% endif %}
   </div>
 {% else %}
-  <div class="responsive-image-container" {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }};"{% endif %}>
-    <img 
-      src="{{ site.baseurl }}/assets/images/{{ include.file }}" 
-      alt="{{ include.alt | default: 'Image' }}" 
-      class="responsive-image{% if include.fill_width %} responsive-image--fill-width{% endif %}"
-      {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
-    >
+  <div>
+    <div class="responsive-image-container" {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }};"{% endif %}>
+      <img 
+        src="{{ site.baseurl }}/assets/images/{{ include.file }}" 
+        alt="{{ include.alt | default: 'Image' }}" 
+        class="responsive-image{% if include.fill_width %} responsive-image--fill-width{% endif %}"
+        {% if include.height %}style="height: {{ include.height }}px;"{% endif %}
+      >
+    </div>
+    {% if include.credit %}
+      <div class="image-credit">{{ include.credit }}</div>
+    {% endif %}
   </div>
 {% endif %}

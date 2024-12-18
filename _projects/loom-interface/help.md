@@ -30,7 +30,7 @@ You can visit the [Anthropic](https://console.anthropic.com/settings/keys) and [
 Download the below files and import them from the Loom home screen to get a feel for navigating around a tree. 
 
 {% include download-button.html 
-  file="/dlc/loom-interface/24-12-15 The Existence of Claude.json" 
-  name="The Existence of Claude.json" 
+  file="/dlc/loom-interface/24-12-15 The Existence of Claude.openloom.json" 
+  name="The Existence of Claude" 
   type="OpenLoom JSON File" 
 %}
