@@ -11,7 +11,6 @@ This page highlights the work I'm most proud of. Check out what I'm currently wo
 ## Software Development
 <hr>
 ### Innovative Software, Holistic Solutions: Turning Challenges Into Achievements.
-### Innovative Software, Holistic Solutions: Turning Challenges Into Achievements.
 All projects written from the ground up by Asher Pope, including this website ([view source on GitHub](https://github.com/rocketbro/rocketbro.github.io)).
 
 
