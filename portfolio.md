@@ -37,6 +37,8 @@ Right now, popular AI interfaces almost all enforce linear thinking - one "best"
 - Import & export JSON files for conversation sharing
 - Dynamic UI/UX settings, including custom fonts, message styling, and more
 
+*Loom is currently proprietary. [Contact me](mailto:asher@asherpope.com) to discuss any code related questions.*
+
 <br>
 
 # Record Machine

@@ -20,7 +20,7 @@ permalink: /projects/loom-interface
 
 <br> 
 
-Loom: LLM Interface is the first Loom designed for mobile platforms, and is currently in development for iOS. [Join the Discord for beta access](https://discord.gg/JtJeug6mFY).
+Loom: LLM Interface is the first Loom designed for mobile platforms, and is currently in development for iOS. [Join the Discord for beta access](https://discord.gg/JtJeug6mFY). Loom is currently proprietary. [Contact me](mailto:asher@asherpope.com) to discuss any code related questions. 
 
 ### What Is A Loom Interface?
 A Loom Interface, introduced in a 2021 paper by Reynolds and McDonell, is an approach to interacting with language models that allows users to explore multiple continuations of any conversation point, creating a tree-like structure of parallel exchanges. Read more about the theory on the [OpenLoom Project Page](/projects/openloom).
