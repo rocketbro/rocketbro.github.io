@@ -10,11 +10,10 @@ tags: [cooking-with-claude]
 
 ## Ingredients
 - 2 cups all-purpose flour
-- 2½ tsp Clabber Girl Baking Powder
+- 2½ tsp baking powder
 - ½ tsp salt
 - ⅓ cup cold butter
 - ¾ cup milk
-- 1 Tbsp soft butter
 
 ## Instructions
 
@@ -28,7 +27,7 @@ tags: [cooking-with-claude]
 
 5. Lightly roll dough to ¾-inch thickness. Cut dough with a 2½-inch biscuit cutter, dipping cutter into flour between cuts.
 
-6. Place biscuits close together on a lightly greased baking sheet. Brush tops with 1 Tbsp soft butter.
+6. Place biscuits close together on a lightly greased baking sheet or floured cast iron skillet.
 
 7. Bake for 11 to 15 minutes or until golden brown.
 
@@ -36,9 +35,5 @@ tags: [cooking-with-claude]
 
 Yield: Makes about 8 biscuits
 
-## Storage Instructions
-- Use dry utensil
-- Replace lid promptly
-- Store in dry, cool place
-- Best if used by date on bottom of can
-- Shake can before using (contents may settle during shipping)
+## Notes
+- If multiplying, you may need to add more milk to get the dough sticky. You can also use some sour cream to make the biscuits super dope.
