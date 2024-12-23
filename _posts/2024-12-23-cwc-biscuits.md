@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CWC] Old Fashioned Biscuits"
+title: "Old Fashioned Biscuits"
 author: "Asher Pope"
 date: 2024-12-23
 tags: [cooking-with-claude]
@@ -12,7 +12,7 @@ tags: [cooking-with-claude]
 - 2 cups all-purpose flour
 - 2½ tsp Clabber Girl Baking Powder
 - ½ tsp salt
-- ⅓ cup shortening
+- ⅓ cup cold butter
 - ¾ cup milk
 - 1 Tbsp soft butter
 
@@ -20,7 +20,7 @@ tags: [cooking-with-claude]
 
 1. Preheat oven to 475°F.
 
-2. In a medium mixing bowl stir together 2 cups flour, 2½ tsp baking powder, and ½ tsp salt. Using a pastry blender, cut in ⅓ cup shortening until mixture resembles coarse crumbs.
+2. In a medium mixing bowl stir together 2 cups flour, 2½ tsp baking powder, and ½ tsp salt. Using a pastry blender, cut in ⅓ cup cold butter until mixture resembles coarse crumbs.
 
 3. Make a well in the center of the flour mixture. Add ¾ cup milk all at once. Using a fork, stir just until moistened and dough pulls away from the sides of the bowl (dough will be sticky).
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CWC] Buttermilk Pancakes"
+title: "Buttermilk Pancakes"
 author: "Asher Pope"
 date: 2024-11-16
 tags: [cooking-with-claude]
