@@ -96,3 +96,14 @@ def load_nodes(input_node=None, trace_children=False):
     # Finally, return the ordered list.
     return node_cache
 ```
+
+### Example Loom Tree
+
+Download this example loom tree to see the OpenLoomspec in action.
+
+{% include download-button.html 
+  file="/dlc/loom-interface/24-12-15 The Existence of Claude.openloom.json" 
+  name="The Existence of Claude" 
+  type="OpenLoom JSON File" 
+%}
+
