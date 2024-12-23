@@ -23,7 +23,7 @@ In February 2021, Laria Reynolds and Kyle McDonell published a paper entitled [L
 While the original paper focuses mainly on applications in the creative writing field, the core concept of a Loom interface has much broader implications. Loom interfaces are designed around the concept of **curation**; the user *curating* model responses as an **additional** (high-bandwidth & low-effort) mode of steering via solely composing prompts. These interfaces make it easy and intuitive to explore counterfactuals and to quickly determine how collapsed a given model is, simply by generating multiple responses to the same prompt and comparing them. A more collapsed model will tend to generate many similar responses, while a less collapsed model can offer thousands of possibilities in the many continuations it provides.
 
 ### OpenLoom
-The OpenLoom project aims to create a unified standard that LLM interfaces based on the [Loom Theory](https://rocketbro.github.io/2024/11/16/loom-paper/) can implement to easily share node trees (conversations) between platforms. It defines shapes for loom trees (conversations) and nodes (messages), as well as example methods for traversing and interacting with the tree. 
+The OpenLoom project aims to create a unified standard that LLM interfaces based on the [Loom Theory](https://rocketbro.github.io/2024/11/16/loom-paper/) can implement to easily share trees between platforms. It defines shapes for loom trees (conversations) and nodes (messages), as well as example methods for traversing and interacting with the tree. 
 
 OpenLoom files are stored in JSON format and should use the following naming convention:  
 
