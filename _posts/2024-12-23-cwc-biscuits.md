@@ -19,13 +19,13 @@ tags: [cooking-with-claude]
 
 1. Preheat oven to 475°F.
 
-2. In a medium mixing bowl stir together 2 cups flour, 2½ tsp baking powder, and ½ tsp salt. Using a pastry blender, cut in ⅓ cup cold butter until mixture resembles coarse crumbs.
+2. In a medium mixing bowl stir together 2 cups flour, 2½ tsp baking powder, and ½ tsp salt. Cut in ⅓ cup cold butter and gently knead until mixture resembles coarse crumbs.
 
 3. Make a well in the center of the flour mixture. Add ¾ cup milk all at once. Using a fork, stir just until moistened and dough pulls away from the sides of the bowl (dough will be sticky).
 
 4. On a floured surface, lightly knead dough with floured hands for 30 seconds or until nearly smooth.
 
-5. Lightly roll dough to ¾-inch thickness. Cut dough with a 2½-inch biscuit cutter, dipping cutter into flour between cuts.
+5. Lightly roll dough to ¾-inch thickness. Cut dough with a 2½-inch biscuit cutter (or something round), dipping cutter into flour between cuts.
 
 6. Place biscuits close together on a lightly greased baking sheet or floured cast iron skillet.
 
