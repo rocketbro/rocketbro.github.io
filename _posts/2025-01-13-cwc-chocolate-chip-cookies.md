@@ -8,6 +8,20 @@ tags: [cooking-with-claude]
 
 [From Farmhouse on Boone](https://www.farmhouseonboone.com/sourdough-chocolate-chip-cookies/)
 
+## Ingredients
+
+- 1 cup (227g) unsalted butter, softened
+- 1 cup (200g) white granulated sugar
+- 1 cup (200g) light brown sugar, lightly packed
+- 2 large eggs
+- 3/4 cup (170g) sourdough discard
+- 2 teaspoons (8g) vanilla extract
+- 3 cups (405g) all purpose flour
+- 1 teaspoon (6g) baking soda
+- 1/2 teaspoon (2.5g) baking powder
+- 1 1/2 teaspoons (7g) salt
+- 2 cups (340g) chocolate chips​​​​​​​​​​​​​​​​
+
 ## Instructions
 
 1. In a stand mixer with a paddle attachment, cream together *1 cup (227g) softened unsalted butter*, *1 cup (200g) white granulated sugar*, and *1 cup (200g) light brown sugar* until light and fluffy.
