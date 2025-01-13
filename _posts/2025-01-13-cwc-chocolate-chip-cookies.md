@@ -6,7 +6,6 @@ date: 2025-01-13
 tags: [cooking-with-claude]
 ---
 
-# Sourdough Chocolate Chip Cookies
 [From Farmhouse on Boone](https://www.farmhouseonboone.com/sourdough-chocolate-chip-cookies/)
 
 ## Instructions
