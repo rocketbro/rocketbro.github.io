@@ -6,7 +6,7 @@ date: 2025-01-13
 tags: [cooking-with-claude]
 ---
 
-[Based on this Farmhouse on Boone recipe](https://www.farmhouseonboone.com/sourdough-chocolate-chip-cookies/)
+[Based on this recipe from The Farmhouse on Boone](https://www.farmhouseonboone.com/sourdough-chocolate-chip-cookies/)
 
 ## Ingredients
 
