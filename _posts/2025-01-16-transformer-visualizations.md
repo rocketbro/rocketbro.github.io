@@ -80,7 +80,8 @@ Key visualization principles I'd recommend:
 - Size/scale for magnitude
 - Particle density for activation patterns
 
-4. Interactive elements:
+4. Interactive elements:  
+ 
 ```typescript
 Controls:
 ┌─────────────────┐
@@ -90,7 +91,8 @@ Controls:
 └─────────────────┘
 ```
 
-5. Multiple views:
+5. Multiple views:  
+ 
 ```typescript
 ┌────────────┬────────────┐
 │            │            │
@@ -204,7 +206,8 @@ Key visualization features I'd recommend:
 - Layer normalization statistics
 - Residual stream contributions
 
-Example interaction flow:
+Example interaction flow:  
+
 ```typescript
 User clicks token "cat" →
 
@@ -288,7 +291,8 @@ Key visualization elements I'd recommend:
 - Highlight specific circuits when detected
 
 Implementation suggestions:
-1. Make it explorable at multiple scales:
+1. Make it explorable at multiple scales:  
+ 
 ```typescript
 [ZOOM LEVELS]
 
@@ -301,7 +305,8 @@ Level 3:   □ Component (Attention/FF)
 Level 4:   □ Individual Activations
 ```
 
-2. Use collapsible/expandable views:
+2. Use collapsible/expandable views:  
+ 
 ```typescript
 [COLLAPSED]         [EXPANDED]
    ┌──┐              ┌────────┐
@@ -309,7 +314,8 @@ Level 4:   □ Individual Activations
    └──┘              └────────┘
 ```
 
-3. Provide different viewing angles:
+3. Provide different viewing angles:  
+ 
 ```typescript
   [Front]    [Side]     [Top]
     ▣         ▤▤▤        ┌─┐
