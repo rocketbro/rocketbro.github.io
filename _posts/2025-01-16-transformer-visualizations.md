@@ -18,7 +18,7 @@ Experimenting with Claude's understanding of transformer models and how it imagi
 ---
 This is a fascinating design challenge! Here are a few visualization approaches you could consider:
 
-```python
+```typescript
 APPROACH 1: FLOWING ACTIVATION STREAMS
 (Side view of layers flowing down)
 
@@ -82,7 +82,7 @@ Key visualization principles I'd recommend:
 
 4. Interactive elements:  
  
-```swift
+```typescript
 Controls:
 ┌─────────────────┐
 │ ▶ Play         │  - Step through tokens
@@ -93,7 +93,7 @@ Controls:
 
 5. Multiple views:  
  
-```kotlin
+```typescript
 ┌────────────┬────────────┐
 │            │            │
 │ 3D View    │ Layer View │
@@ -140,7 +140,7 @@ The key is balancing:
 ---
 I'll propose a 3D visualization concept and use ASCII art to illustrate different views. The key is to make the visualization both accurate and intuitive.
 
-```ruby
+```typescript
 TOP VIEW (looking down at one layer):
                         ATTENTION PATTERNS
               token1    token2    token3    token4
