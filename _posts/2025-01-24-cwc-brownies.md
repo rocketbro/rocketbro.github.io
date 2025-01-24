@@ -37,8 +37,8 @@ tags: [cooking-with-claude]
    - 1 cup (82g) unsweetened natural or dutch-process cocoa powder
    - 1 cup (125g) all-purpose flour (spooned & leveled)
    - 1 teaspoon salt
-   - Remaining 2 ounces (57g) chopped chocolate
-   - Optional: 1 1/4 cups (225g) semi-sweet chocolate chips
+   - Another 1/3 cup (57g) chocolate chips
+   - Optional: additional 1 1/4 cups (225g) semi-sweet chocolate chips
 
    Batter will be very thick. Spread evenly into prepared pan.
 
