@@ -26,7 +26,8 @@ In a microwave-safe bowl, combine:
 Melt in 30-second increments, whisking after each, until completely smooth. Or you can just do it on the stove in a skillet and add it to the rest of the stuff when it's done.  
 
 Whisk in:
-- 2 cups (400g) granulated sugar
+- 2 cups (400g) granulated sugar. 
+
 Then add:
 - 3 large eggs, at room temperature
 - 2 teaspoons pure vanilla extract
