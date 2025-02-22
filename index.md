@@ -11,7 +11,7 @@ title: Home
    background_style="solid"
 %}
 
-Welcome! This site is an active notebook to get things out of my brain and into some readable format that I can iterate on and use to track progress. A bit about me and my work...
+Yo! This site is an active notebook to get things out of my brain and into some readable format that I can iterate on and use to track progress. A bit about me and my work...
 
 # Intrinsic Labs LLC
 I own and operate a small tech studio called Intrinsic Labs LLC. We primarily focus on software development in the native mobile space, typically with some combination of the following stack:
